@@ -1,0 +1,74 @@
+/* TAG GENERICI */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #212121;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+  height: 80px;
+  background-color: #121212;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+header img {
+  margin-top: 5px;
+  height: 70px;
+  width: 70px;
+}
+
+/* MAIN */
+
+.container-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-inner .card {
+  background-color: #535353;
+  height: 250px;
+  width: 180px;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-inner .card .image {
+  align-items: center;
+  height: 60%;
+}
+
+.container-inner .card .text {
+  color: white;
+  align-self: center;
+  text-align: center;
+  height: 40%;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+

@@ -1,0 +1,13 @@
+.clearfix::after {
+    @include clearfix;
+}
+
+body {
+    font-family: $primary_font;
+    background-color: $bg_color;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
