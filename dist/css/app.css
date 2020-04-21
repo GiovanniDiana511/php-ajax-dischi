@@ -58,11 +58,21 @@ header img {
 }
 
 .container-inner .card .image {
-  align-items: center;
+  margin-top: 10px;
+  display: flex;
   height: 60%;
+  width: 100%;
+}
+
+.container-inner .card .image #album {
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 130px;
+  height: 130px;
 }
 
 .container-inner .card .text {
+  margin-top: 10px;
   color: white;
   align-self: center;
   text-align: center;
