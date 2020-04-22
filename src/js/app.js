@@ -5,7 +5,7 @@ $(document).ready(function () {
         method: "GET",
         success: function (data) {
             //console.log(data);
-            var source = document.getElementById("template").innerHTML;
+            var source = $("#template").html();
             var template = Handlebars.compile(source);
             var database = data;
             for (var i = 0; i < database.length; i++) {
