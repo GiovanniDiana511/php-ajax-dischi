@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="dist/css/app.css">
-        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha256-usTqAE1ywvdMtksWzdeWzD75MsfJN0h0U7y2NtZL3N0=" crossorigin="anonymous"></script>
         <title>SPAJaxfy</title>
     </head>
     <body>
@@ -35,6 +35,18 @@
                                 </div>
                             </div> -->
                         <?php } */ ?>
+                    <script id="template" type="text/x-handlebars-template">
+                        <div class="card">
+                            <div class="image">
+                                <img id="album" src={{immagine}} alt="">
+                            </div>
+                            <div class="text">
+                                <h4>{{titolo}}</h4>
+                                <h5>{{artista}}</h5>
+                                <p>{{anno}}</p>
+                            </div>
+                        </div>
+                    </script>
                 </div>
             </div>
         </main>
@@ -43,7 +55,7 @@
 
             </div>
         </footer>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="dist/js/app.js" charset="utf-8"></script>
     </body>
 </html>

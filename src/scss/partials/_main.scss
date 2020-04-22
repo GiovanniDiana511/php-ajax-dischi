@@ -11,6 +11,12 @@
         margin-top: 30px;
         display: flex;
         flex-direction: column;
+        transition: 0.3s;
+        &:hover {
+            border: 1px solid $hover_color;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
         .image {
             margin-top: 10px;
             display: flex;
